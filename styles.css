@@ -2,12 +2,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    text-decoration: none;
     /* border:1px solid black; */
 }
 body{
     height: 100vh;
     width: 100%;
     background-color:rgb(193, 221, 237);
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 .container{
@@ -17,11 +20,18 @@ body{
     grid-template-rows: repeat(4, auto);
 }
 
-.one{
+nav{
     background-color: rgb(35, 174, 255);
     grid-column: 1/2;
     grid-row: 1/5 ;
     height: 100%;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    line-height: 1.8em;
+    padding: 1em;
 }
 
 .two{
